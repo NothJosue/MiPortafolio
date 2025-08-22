@@ -85,8 +85,6 @@ span > a {
   font-style: italic;
 }
 
-
-
 .container {
   display: flex;
 }
@@ -133,12 +131,12 @@ span > a {
   background: #009689;
 }
 
-section{
+section {
   margin: 40px 0;
   border-bottom: 1px solid #fff;
 }
 
-.container-icons{
+.container-icons {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -146,7 +144,7 @@ section{
   margin: 15px 0;
 }
 
-.span_icons{
+.span_icons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,65 +153,54 @@ section{
   border-radius: 25px;
   background: #013027;
   margin: 15px 6px;
-  color: #37A791;
+  color: #37a791;
   font-weight: bold;
 }
 
-.icons_tecnologias{
+.icons_tecnologias {
   width: 30px;
   height: 30px;
-  fill: #37A791;
+  fill: #37a791;
   margin-right: 8px;
 }
 
-.span_icons-big{
+.span_icons-big {
   width: 140px;
 }
 
 /* PROYECTOS */
-.seccion-proyectos{
+.seccion-proyectos {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  flex-wrap: wrap;
-  align-content: space-around;
-  height: 480px;
-  margin-bottom: 30px;
+  justify-content: space-around;
+  gap: 20px;
 }
-.card-container{
+.card-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
-  justify-content: start;
   width: 275px;
-  height: 462px;
+  height: 480px;
   background: #013027;
+  margin: 20px;
 }
 
-.card{
-  width: 275px;
-  height: 230px;
-}
-
-.card-image{
+.card-image {
   width: 100%;
   height: 230px;
   cursor: pointer;
 }
 
-.card-items{
+.card-items {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 100%;
-  height: 100%;
   padding: 10px;
   margin: 10px;
   align-items: center;
 }
 
-.parrafo{
+.parrafo {
   font-size: 14px;
 }
 
@@ -222,28 +209,27 @@ section{
   padding: 10px 30px 10px 0;
 }
 
-.icons_proyectos{
+.icons_proyectos {
   width: 15px;
   height: 15px;
   fill: #767676;
 }
 
-.span_proyecto{
+.span_proyecto {
   font-size: 12px;
   width: 68px;
   height: 20px;
-  background: #1C1C1C;
+  background: #1c1c1c;
   color: #767676;
   margin: 2px;
 }
 
-
-.icon-big_proyecto{
+.icon-big_proyecto {
   width: 100px;
   padding: 2px;
 }
 
-.icon_github-proyecto{
+.icon_github-proyecto {
   margin: auto;
   margin-top: 5px;
   fill: #767676;
@@ -251,16 +237,19 @@ section{
   height: 32px;
 }
 
-.icon_github-proyecto:hover{
+.icon_github-proyecto:hover {
   fill: #aaaaaa;
 }
 
-.container-icons-proyectos{
+.container-icons-proyectos {
   justify-content: center;
 }
 
 /* ADAPTACION A MOBILE*/
 @media (max-width: 768px) {
+  body {
+    padding: 100px 10px 20px 10px
+  }
   a {
     text-decoration: none;
     font-size: 20px;
@@ -329,7 +318,7 @@ section{
 
   /* INICIO DEL INICIO  */
   .titulo {
-    font-size: 40px;
+    font-size: 28px;
     font-weight: bold;
     padding: 20px 0;
   }
@@ -342,7 +331,7 @@ section{
   }
 
   .subtitulo {
-    font-size: 24px;
+    font-size: 18px;
     margin: 20px;
   }
   .subItalico {
@@ -364,18 +353,18 @@ section{
   .container-movil {
     display: flex;
     flex-direction: column;
-    margin: 0 60px;
+    margin: 0 10px;
   }
 
   .perfil {
     margin: 0;
   }
   .perfil-imagen {
-    min-width: 320px;
-    min-height: 320px;
+    width: 100%;
+    max-width: 320px;
     border-radius: 50%;
     background: #025e4c;
-    margin: 0 10px 0 10px;
+    margin: 20px auto;
   }
 
   .icons-social {
@@ -399,7 +388,7 @@ section{
     margin: 10px 10px;
     cursor: pointer;
   }
-  .container-movil_button{
+  .container-movil_button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -407,11 +396,22 @@ section{
   .button:active {
     background: #009689;
   }
-  .container-icons{
+  .container-icons {
     justify-content: center;
   }
-  .container-tecnologias{
+  .container-tecnologias {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-proyectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .seccion-proyectos {
     flex-direction: column;
     align-items: center;
   }
