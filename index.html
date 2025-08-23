@@ -2,6 +2,9 @@
 <html lang="es-Pe">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Sitio web para mi Portafolio">
+    <meta name="keywords" content="CV, Backend, Programador, Desarrollador, Ingenieria Informatica, Java, HTML, CSS, JavaScript">
+    <meta name="author" content="Josue Albarracin Rivera">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio</title>
     <link rel="stylesheet" href="style.css" />
@@ -23,19 +26,19 @@
         </button>
         <ul class="nav-menu">
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Inicio</a>
+            <a href="#inicio" class="nav-menu-link">Inicio</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Tecnologías</a>
+            <a href="#tecnologias" class="nav-menu-link">Tecnologías</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Proyectos</a>
+            <a href="#proyectos" class="nav-menu-link">Proyectos</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Formación</a>
+            <a href="#formacion" class="nav-menu-link">Formación</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Contáctame</a>
+            <a href="#contactame" class="nav-menu-link">Contáctame</a>
           </li>
         </ul>
       </nav>
@@ -46,9 +49,9 @@
       <main class="main">
 
         <!-- INICIO start -->
-        <div class="container container_inicio">
-          <div class="container-movil">
-            <h1 class="titulo">¡Hola, Soy Josue AR!</h1>
+        <div class="container container_inicio" id="inicio">
+          <div class="container-movil" >
+            <h1 class="titulo" >¡Hola, Soy Josue AR!</h1>
             <h2 class="subtitulo subItalico">Progamador Backend</h2>
             <p class="parrafo inicio-parrafo">
               Soy un estudiante de la carrera de Ingeniería Informática en
@@ -60,8 +63,8 @@
               <a aria-label="Entrar al linkedin de JosueAR" href="https://pe.linkedin.com/in/josue-albarracin-rivera-a82957344" target="_blank"><svg class="icons-social" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/></svg></a>
             </div>
             <div class="container-movil_button">
-              <input class="button" type="button" value="CV">
-              <input class="button" type="button" value="Contáctame">
+              <input class="button" type="button" href="" value="CV">
+              <a href="#contactame"><input class="button" type="button" value="Contáctame"></a>
             </div>
           </div>
           <div class="perfil">
@@ -71,7 +74,7 @@
         <!-- INICIO final -->
 
         <!-- SECCION TECNOLOGIAS start -->
-        <section class="container-tecnologias">
+        <section class="container-tecnologias" id="tecnologias">
           <h2 class="subtitulo">Tecnologías</h2>
           <div class="container-icons">
             <span class="span_icons "><svg class="icons_tecnologias" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M128 96L162.9 491.8L319.5 544L477.1 491.8L512 96L128 96zM436.2 223.9L252.4 223.9L256.5 273.3L432.1 273.3L418.5 421.7L320.6 448.7L320.6 449L319.5 449L220.8 421.7L214.8 345.9L262.5 345.9L266 384L319.5 398.5L373.2 384L379.2 321.8L212.3 321.8L199.5 176.2L440.6 176.2L436.2 223.9z"/></svg>Html</span>
@@ -91,7 +94,7 @@
         <!-- SECCION TECNOLOGIAS final -->
 
         <!-- SECCION PROYECTOS start -->
-        <section class="container-proyectos">
+        <section class="container-proyectos" id="proyectos">
           <h2 class="subtitulo">Proyectos</h2>
           <div class="seccion-proyectos">
             <div class="card-container">
@@ -161,15 +164,21 @@
 
         <!-- SECCION FORMACION start -->
       
-        <section>
-          <h2>Formación</h2>
-          <div>
-            <div>
-              <span>icono universidad</span>
-              <h3>universidad Nacional Federico Villarreal (UNFV)</h3>
+        <section class="seccion-formacion" id="formacion">
+          <h2 class="subtitulo">Formación</h2>
+          <div class="container-texto">
+            <div class="container-formacion">
+              <div class="container-formacion_items">
+                <span><svg class="icons_tecnologias"  width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet" fill="#002925" stroke="#002925"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M18.49 34.333v-1.597l.479-.22L32 38.486l30-13.743L32 11L2 24.743l13.63 6.243a1.837 1.837 0 0 0-.122.629v1.352l-2.38-1.09v4.62c0 1.368.367 2.596.997 3.7v10.271c0 3.375 5.75 3.375 5.75 0v-5.556c10.852 4.821 30.996 2.024 30.996-8.416v-4.62L32 40.521l-13.51-6.188m.385 16.136c0 .357-.232.678-.598.904V38.696l-.197.134v12.652l-.59.181V39.061l-.195.035v12.596h-.59V39.096l-.197-.035v12.603l-.588-.181V38.83l-.197-.134v12.677c-.365-.227-.598-.547-.598-.904V38.486c0-1.146.588-2.102 1.383-2.391v-4.48c0-.305.152-.533.361-.628l15-6.873a.407.407 0 0 1 .164-.039c.478 0 .634 1.05.098 1.296L17.49 32.077v4.018c.796.287 1.385 1.243 1.385 2.391v11.983" fill="#006b62"></path></g></svg></span>
+                <h3>Universidad Nacional Federico Villarreal (UNFV)</h3>
+              </div>
+              <div class="">
+                <h3>2022 - actual (8vo ciclo)</h3>
+              </div>
             </div>
-            <h3>2022 - actual (8vo ciclo)</h3>
-            <span>Ingeniería Informática</span>
+            <div class="text-formacion">
+                <span>Ingeniería Informática</span>
+            </div>
           </div>
         </section>
 
@@ -177,42 +186,54 @@
 
         <!-- SECCION CONTACTAME start -->
         
-        <section>
-          <h2>Contáctame</h2>
-          <div>
-            <p>
-              Si tienes alguna duda y/o quieres que forme parte de tu equipo,
-              puedes contactar a través de estos medios:
-            </p>
-            <div> <!-- Vacio para colocar 2 pixeles de linea vertical --></div>
-            <ul>
-              <li><span>Icon Ubicacion-> Perú</span></li>
-              <li><span>Icon teléfono-> +51 930 662 089</span></li>
-              <li><span>Icon correo-> josuealbarracinr@gmail.com</span></li>
-            </ul>
+        <section class="seccion-contactame" id="contactame">
+          <h2 class="subtitulo">Contáctame</h2>
+          <div class="container-contactame">
+            <div class="text-contactame">
+              <p>Si tienes alguna duda y/o quieres que forme parte de tu equipo, puedes contactar a través de estos medios:</p>
+            </div>
+            <div class="div-contactame"> <!-- Vacio para colocar 2 pixeles de linea vertical --></div>
+            <div class="">
+              <ul>
+                <li class="list-items_contactame">
+                  <svg class="iconos-contactame" width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 8.25C11.5858 8.25 11.25 8.58579 11.25 9C11.25 9.41421 11.5858 9.75 12 9.75C12.4142 9.75 12.75 9.41421 12.75 9C12.75 8.58579 12.4142 8.25 12 8.25Z" fill="#37A791"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C8.60218 3 6 5.58614 6 8.8125C6 10.6204 6.84017 12.5038 7.91017 14.0845C8.98664 15.6747 10.3653 17.0616 11.584 17.874C11.8359 18.042 12.1641 18.042 12.416 17.874C13.6347 17.0616 15.0134 15.6747 16.0898 14.0845C17.1598 12.5038 18 10.6204 18 8.8125C18 5.58614 15.3978 3 12 3ZM9.75 9C9.75 7.75736 10.7574 6.75 12 6.75C13.2426 6.75 14.25 7.75736 14.25 9C14.25 10.2426 13.2426 11.25 12 11.25C10.7574 11.25 9.75 10.2426 9.75 9Z" fill="#37A791"></path> <path d="M6.93012 16.6C7.33221 16.5005 7.57753 16.0939 7.47805 15.6918C7.37857 15.2897 6.97197 15.0444 6.56988 15.1439C5.61574 15.38 4.78135 15.6883 4.16678 16.0706C3.5895 16.4296 3 16.9885 3 17.7785C3 18.4839 3.47385 19.0048 3.96484 19.3526C4.47548 19.7142 5.16572 20.0093 5.95114 20.2446C7.53154 20.718 9.66994 21 12 21C14.3301 21 16.4685 20.718 18.0489 20.2446C18.8343 20.0093 19.5245 19.7142 20.0352 19.3526C20.5261 19.0048 21 18.4839 21 17.7785C21 16.9885 20.4105 16.4296 19.8332 16.0706C19.2186 15.6883 18.3843 15.38 17.4301 15.1439C17.028 15.0444 16.6214 15.2897 16.5219 15.6918C16.4225 16.0939 16.6678 16.5005 17.0699 16.6C17.948 16.8172 18.6136 17.0784 19.041 17.3443C19.2537 17.4766 19.3787 17.5925 19.4447 17.6782C19.4762 17.7191 19.4899 17.7474 19.4955 17.7621C19.4983 17.7694 19.4993 17.7739 19.4997 17.7758C19.5 17.7776 19.5 17.7785 19.5 17.7785L19.4998 17.7806C19.4998 17.7806 19.4989 17.7852 19.4971 17.7904C19.4935 17.8009 19.4846 17.8221 19.4631 17.8536C19.4178 17.9198 19.3286 18.0149 19.1682 18.1285C18.8439 18.3582 18.3259 18.5957 17.6184 18.8077C16.2129 19.2287 14.2263 19.5 12 19.5C9.77371 19.5 7.78711 19.2287 6.3816 18.8077C5.67406 18.5957 5.15612 18.3582 4.83182 18.1285C4.67144 18.0149 4.58216 17.9198 4.53692 17.8536C4.5154 17.8221 4.50646 17.8009 4.50289 17.7904C4.50111 17.7852 4.50022 17.7806 4.50022 17.7806L4.5 17.7785C4.5 17.7785 4.5 17.7776 4.50034 17.7758C4.50071 17.7739 4.50173 17.7694 4.5045 17.7621C4.51013 17.7474 4.52377 17.7191 4.55527 17.6782C4.62132 17.5925 4.74628 17.4766 4.95903 17.3443C5.3864 17.0784 6.05201 16.8172 6.93012 16.6Z" fill="#37A791"></path> </g></svg>
+                  <span>Perú</span>
+                </li>
+                <li class="list-items_contactame">
+                  <svg class="iconos-contactame" height="25px" width="25px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#37A791;} </style> <g> <path class="st0" d="M94.811,21.696c-35.18,22.816-42.091,94.135-28.809,152.262c10.344,45.266,32.336,105.987,69.42,163.165 c34.886,53.79,83.557,102.022,120.669,129.928c47.657,35.832,115.594,58.608,150.774,35.792 c17.789-11.537,44.218-43.058,45.424-48.714c0,0-15.498-23.896-18.899-29.14l-51.972-80.135 c-3.862-5.955-28.082-0.512-40.386,6.457c-16.597,9.404-31.882,34.636-31.882,34.636c-11.38,6.575-20.912,0.024-40.828-9.142 c-24.477-11.262-51.997-46.254-73.9-77.947c-20.005-32.923-40.732-72.322-41.032-99.264c-0.247-21.922-2.341-33.296,8.304-41.006 c0,0,29.272-3.666,44.627-14.984c11.381-8.392,26.228-28.286,22.366-34.242l-51.972-80.134c-3.401-5.244-18.899-29.14-18.899-29.14 C152.159-1.117,112.6,10.159,94.811,21.696z"></path> </g> </g></svg>
+                  <span>(+51) 930 662 089</span>
+                </li>
+                <li class="list-items_contactame">
+                  <svg fill="#37A791" width="25px" height="25px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#37A791"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z" fill-rule="evenodd"></path> </g></svg>
+                  <span>josuealbarracinr@gmail.com</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
         <!-- SECCION CONTACTAME final -->
       </main>
+      </div>
     </div>
-
     <!--  FOOTER start -->
-    <footer>
-      <div>
-        <span>icon github</span>
-        <span>icon linkedin</span>
+    <footer class="footer">
+      <div class="footer-list footer-social">
+        <a aria-label="Entrar al github de JosueAR" href="https://github.com/NothJosue" target="_blank"><svg class="icons-social" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M237.9 461.4C237.9 463.4 235.6 465 232.7 465C229.4 465.3 227.1 463.7 227.1 461.4C227.1 459.4 229.4 457.8 232.3 457.8C235.3 457.5 237.9 459.1 237.9 461.4zM206.8 456.9C206.1 458.9 208.1 461.2 211.1 461.8C213.7 462.8 216.7 461.8 217.3 459.8C217.9 457.8 216 455.5 213 454.6C210.4 453.9 207.5 454.9 206.8 456.9zM251 455.2C248.1 455.9 246.1 457.8 246.4 460.1C246.7 462.1 249.3 463.4 252.3 462.7C255.2 462 257.2 460.1 256.9 458.1C256.6 456.2 253.9 454.9 251 455.2zM316.8 72C178.1 72 72 177.3 72 316C72 426.9 141.8 521.8 241.5 555.2C254.3 557.5 258.8 549.6 258.8 543.1C258.8 536.9 258.5 502.7 258.5 481.7C258.5 481.7 188.5 496.7 173.8 451.9C173.8 451.9 162.4 422.8 146 415.3C146 415.3 123.1 399.6 147.6 399.9C147.6 399.9 172.5 401.9 186.2 425.7C208.1 464.3 244.8 453.2 259.1 446.6C261.4 430.6 267.9 419.5 275.1 412.9C219.2 406.7 162.8 398.6 162.8 302.4C162.8 274.9 170.4 261.1 186.4 243.5C183.8 237 175.3 210.2 189 175.6C209.9 169.1 258 202.6 258 202.6C278 197 299.5 194.1 320.8 194.1C342.1 194.1 363.6 197 383.6 202.6C383.6 202.6 431.7 169 452.6 175.6C466.3 210.3 457.8 237 455.2 243.5C471.2 261.2 481 275 481 302.4C481 398.9 422.1 406.6 366.2 412.9C375.4 420.8 383.2 435.8 383.2 459.3C383.2 493 382.9 534.7 382.9 542.9C382.9 549.4 387.5 557.3 400.2 555C500.2 521.8 568 426.9 568 316C568 177.3 455.5 72 316.8 72zM169.2 416.9C167.9 417.9 168.2 420.2 169.9 422.1C171.5 423.7 173.8 424.4 175.1 423.1C176.4 422.1 176.1 419.8 174.4 417.9C172.8 416.3 170.5 415.6 169.2 416.9zM158.4 408.8C157.7 410.1 158.7 411.7 160.7 412.7C162.3 413.7 164.3 413.4 165 412C165.7 410.7 164.7 409.1 162.7 408.1C160.7 407.5 159.1 407.8 158.4 408.8zM190.8 444.4C189.2 445.7 189.8 448.7 192.1 450.6C194.4 452.9 197.3 453.2 198.6 451.6C199.9 450.3 199.3 447.3 197.3 445.4C195.1 443.1 192.1 442.8 190.8 444.4zM179.4 429.7C177.8 430.7 177.8 433.3 179.4 435.6C181 437.9 183.7 438.9 185 437.9C186.6 436.6 186.6 434 185 431.7C183.6 429.4 181 428.4 179.4 429.7z"/></svg></a>
+        <a aria-label="Entrar al linkedin de JosueAR" href="https://pe.linkedin.com/in/josue-albarracin-rivera-a82957344" target="_blank"><svg class="icons-social" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/></svg></a>
       </div>
       <div>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Tecnologías</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Formación</a></li>
-          <li><a href="#">Contáctame</a></li>
+        <ul class="footer-list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#formacion">Formación</a></li>
+          <li><a href="#contactame">Contáctame</a></li>
         </ul>
       </div>
-      <span>Sitio creado por Josue AR</span>
+      <div>
+        <span>Sitio creado por Josue AR</span>
+      </div>
     </footer>
     <!--  FOOTER final -->
   </body>
