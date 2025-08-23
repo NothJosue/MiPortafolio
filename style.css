@@ -375,6 +375,10 @@ section {
     left: 0;
   }
 
+  .nav-menu-item:active{
+    left: 100%;
+  }
+
   /* INICIO DEL INICIO  */
   .titulo {
     font-size: 30px;
@@ -526,11 +530,11 @@ section {
     justify-content: center;
   }
 
-
   .footer-list{
     flex-direction: column;
   }
   .footer-social{
     flex-direction: row;
   }
+
 }
