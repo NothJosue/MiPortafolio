@@ -98,16 +98,15 @@ section{
   scroll-margin-top: 80px;
 }
 
-.perfil {
-  margin-left: 40px;
+.perfil{
+  width: 400px;
 }
 
 .perfil-imagen {
-  min-width: 320px;
-  min-height: 320px;
+  max-width: 100%;
+  height: auto;
   border-radius: 50%;
-  background: #025e4c;
-  margin: 20px;
+  background-color: #00534c;
 }
 
 .icons-social {
@@ -188,12 +187,13 @@ section {
   height: 480px;
   background: #013027;
   margin: 20px;
+  border-radius: 10px;
 }
 
 .card-image {
   width: 100%;
   height: 230px;
-  cursor: pointer;
+  border-radius: 10px 10px 0 0 ;
 }
 
 .card-items {
@@ -307,7 +307,7 @@ section {
 /* ADAPTACION A MOBILE*/
 @media (max-width: 768px) {
   body {
-    padding: 100px 10px 20px 10px
+    padding: 100px 20px 20px 20px
   }
   a {
     text-decoration: none;
@@ -387,7 +387,7 @@ section {
   }
 
   .inicio-parrafo {
-    padding: 10px 0;
+    padding: 10px 20px;
     width: 100%;
     text-align: center;
     letter-spacing: 3px;
@@ -420,15 +420,10 @@ section {
     margin: 0 10px;
   }
 
-  .perfil {
-    margin: 0;
-  }
+
   .perfil-imagen {
-    width: 100%;
     max-width: 320px;
-    border-radius: 50%;
-    background: #025e4c;
-    margin: 20px auto;
+    background: #00534c;
   }
 
   .icons-social {
@@ -485,6 +480,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 20px;
   }
 
   .container-formacion{
